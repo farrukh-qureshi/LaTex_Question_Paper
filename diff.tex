@@ -1,0 +1,212 @@
+%DIF LATEXDIFF DIFFERENCE FILE
+
+
+
+
+\documentclass[12pt, a4paper]{exam}
+\usepackage{graphicx}
+%DIF 6c6
+%DIF <  \usepackage[left=0.8in, top=0.7in, bottom=1.5in, total={6.2in,8in}]{geometry}
+%DIF -------
+ \usepackage[left=0.8in, top=0.7in, bottom=1in, total={6.2in,8in}]{geometry} %DIF > 
+%DIF -------
+\usepackage[normalem]{ulem}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+% \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{mathtools}
+
+%\renewcommand{\questionlabel}{\textbf{Q ~\thequestion.}}
+
+
+% \fancyhf{}
+\rfoot{Page \textbf{\thepage} \hspace{1pt} of \textbf{\pageref{LastPage}}}
+
+\renewcommand\ULthickness{1.0pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.3ex}%\maxdimen ---> For changing depth of underline
+
+%% Define a new command as Steven B. Segletes suggested:
+%% Use the length \rlength to have a default width.
+\newlength{\rlength}\setlength{\rlength}{\textwidth}
+\newcommand{\ruletext}[2][\rlength]{%
+  \noindent%
+  \parbox{#1}{%
+    \noindent\hrulefill\raisebox{-.3\ht\strutbox}{#2}\hrulefill\par}}
+
+
+\marksnotpoints
+%\bracketedpoints
+\pointsinrightmargin
+\qformat{\textbf{Q \thequestion \quad \thequestiontitle\hfill\thepoints}}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\input{Logo_and_title}
+\input{instructions}
+
+
+\begin{questions}
+%	\bracketedpoints
+	\pointsinrightmargin
+	\titledquestion{CLO1}[10]
+	\DIFdelbegin \DIFdel{Find an LU factorization of system given below. Also determine the values of $\mathbf{x}$:
+		}\begin{displaymath}
+		\DIFdel{A = }\begin{bmatrix*}[r] 
+		    \DIFdel{1 }& \DIFdel{-2 }& \DIFdel{-4 }& \DIFdel{-3 }\\ 
+		    \DIFdel{-1 }& \DIFdel{1 }& \DIFdel{6 }& \DIFdel{4 }\\
+		    \DIFdel{-4 }& \DIFdel{-3 }& \DIFdel{9 }& \DIFdel{8
+		    }\end{bmatrix*}
+		\DIFdel{, \quad
+		x = }\begin{bmatrix*}[r] 
+			\DIFdel{x_1 }\\ \DIFdel{x_2 }\\ \DIFdel{x_3
+			}\end{bmatrix*}
+		\DIFdel{, \quad
+		b = }\begin{bmatrix*}[r] 
+			\DIFdel{-4 }\\ \DIFdel{6 }\\ \DIFdel{9
+			}\end{bmatrix*}
+		\DIFdel{}\end{displaymath}%DIFAUXCMD
+%DIFDELCMD < 		%%%
+\DIFdelend \DIFaddbegin \DIFadd{You are working as an engineer in a telecommunications company, tasked with positioning a new antenna. The antenna's current location is given in Cartesian coordinates as $P(3, 4, 5)$. To accurately align the antenna with existing infrastructure, you need to convert this location into both cylindrical and spherical coordinates. 
+	}\begin{parts}
+		\part \DIFadd{Convert the given point $ P(3, 4, 5) $ in Cartesian coordinates to cylindrical coordinates
+		}\part \DIFadd{Convert the same point to spherical coordinates using the equations.
+		}\part \DIFadd{Individually plot the point in the three coordinate systems.
+	}\end{parts}
+	\DIFaddend 
+
+		
+	\vspace{0.2in}
+
+	\titledquestion{CLO1}[10]
+	\DIFaddbegin \DIFadd{You are an electromagnetic field engineer assigned to calculate the interaction between two charged particles in free space for a high-precision experimental setup. Charge $Q_A = -20 \, \mu C$ is located at $A(-6, 4, 7)$, and charge $Q_B = 50 \, \mu C$ is at $B(5, 8, -2)$. All distances are given in meters.
+	}\begin{parts}
+		\part \DIFadd{Calculate the distance $R_{AB}$ between points $A$ and $B$
+		}\part \DIFaddend Determine the \DIFdelbegin \DIFdel{Determinant of matrix $E$ given below:
+		}\begin{displaymath}
+		\DIFdel{E = }\begin{bmatrix*}[r] 
+			\DIFdel{0 }& \DIFdel{-3 }& \DIFdel{1 }& \DIFdel{-2 }\\ 
+			\DIFdel{2 }& \DIFdel{-5 }& \DIFdel{-1 }& \DIFdel{-2 }\\
+			\DIFdel{2 }& \DIFdel{-4 }& \DIFdel{0 }& \DIFdel{1 }\\
+			\DIFdel{0 }& \DIFdel{10 }& \DIFdel{-6 }& \DIFdel{0
+			}\end{bmatrix*}
+		\DIFdel{}\end{displaymath}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{unit vector $\hat{R}_{AB}$ pointing from $A$ to $B$.
+		}\part \DIFadd{Compute the vector force exerted on $Q_A$ by $Q_B$ using the permittivity $\epsilon_0 = \frac{10^{-9}}{36\pi} \, \text{F/m}$.
+		}\part \DIFadd{Recalculate the vector force with the permittivity $\epsilon_0 = 8.854 \times 10^{-12} \, \text{F/m}$.
+	}\end{parts}
+	\DIFaddend 
+
+	\DIFdelbegin %DIFDELCMD < \titledquestion{CLO2}[10]
+%DIFDELCMD < 		%%%
+\DIFdel{Find the eigenvalues and eigenvectors for the matrix $T$ given below:
+		}\begin{displaymath}
+		\DIFdel{T = }\begin{bmatrix*}[r] 
+			\DIFdel{5 }& \DIFdel{-3 }\\ 
+			\DIFdel{4 }& \DIFdel{-3 }\\
+			\end{bmatrix*}
+		\DIFdel{}\end{displaymath}%DIFAUXCMD
+%DIFDELCMD < 	%%%
+\DIFdelend \DIFaddbegin \vspace{0.2in}
+	\DIFaddend 
+
+	\DIFdelbegin %DIFDELCMD < \titledquestion{CLO2}[10]
+%DIFDELCMD < 		%%%
+\DIFdel{Compute $A^{10}$, where
+		}\begin{displaymath}
+		\DIFdel{A = }\begin{bmatrix*}[r] 
+				\DIFdel{4 }& \DIFdel{-3 }\\ 
+				\DIFdel{2 }& \DIFdel{-1 }\\
+			\end{bmatrix*}
+		\DIFdel{}\end{displaymath}%DIFAUXCMD
+%DIFDELCMD < 	
+
+%DIFDELCMD < 	%%%
+\DIFdelend \titledquestion{CLO2}[10]
+	\DIFdelbegin \DIFdel{Let 
+		$\mathbf{w} = \begin{bmatrix*}[r] 3 \\ 0 \\ -5 	\end{bmatrix*}$,
+		$\mathbf{x} = \begin{bmatrix*}[r] 6 \\ 0 \\ 3 	\end{bmatrix*}$, and $\mathbf{y} = \begin{bmatrix*}[r] 6 \\ 0 \\ 3 	\end{bmatrix*}$
+		}%DIFDELCMD < 
+
+%DIFDELCMD < 		%%%
+\DIFdelend \DIFaddbegin \DIFadd{You are tasked with analyzing the electric field properties in a region of free space where the electric flux density is given by $\mathbf{D} = 0.3r^2 \hat{a}_r \, \text{nC/m}^2$. You need to perform the following calculations for a report on the electric field distribution and charge within a spherical region.
+	}\DIFaddend \begin{parts}
+		\part Find \DIFdelbegin \DIFdel{a unit vector $\mathbf{u}$ in the direction of $\mathbf{y}$}\DIFdelend \DIFaddbegin \DIFadd{the electric field $\mathbf{E}$ at point $P(r = 2, \theta = 25^\circ, \phi = 90^\circ)$}\DIFaddend .
+		\part Determine \DIFdelbegin \DIFdel{whether $\mathbf{w}$, $\mathbf{x}$ and $\mathbf{y}$ are orthogonal vectors.
+			}%DIFDELCMD < \part %%%
+\DIFdel{Find the length of $\mathbf{x}$ and $\mathbf{y}$}\DIFdelend \DIFaddbegin \DIFadd{the total charge within a sphere of radius $r = 3$}\DIFaddend .
+		\part \DIFdelbegin \DIFdel{Find the distance between $\mathbf{w}$ and $\mathbf{y}$}\DIFdelend \DIFaddbegin \DIFadd{Calculate the total electric flux leaving a sphere of radius $r = 4$}\DIFaddend .
+	\end{parts}	
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \end{questions}
+
+
+
+\vspace{0.2in}
+\ruletext{\large \bfseries End of Paper}
+\end{document}
