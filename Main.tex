@@ -1,0 +1,82 @@
+
+
+
+\documentclass[12pt, a4paper]{exam}
+\usepackage{graphicx}
+ \usepackage[left=0.8in, top=0.7in, bottom=1in, total={6.2in,8in}]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+% \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{mathtools}
+
+%\renewcommand{\questionlabel}{\textbf{Q ~\thequestion.}}
+
+
+% \fancyhf{}
+\rfoot{Page \textbf{\thepage} \hspace{1pt} of \textbf{\pageref{LastPage}}}
+
+\renewcommand\ULthickness{1.0pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.3ex}%\maxdimen ---> For changing depth of underline
+
+%% Define a new command as Steven B. Segletes suggested:
+%% Use the length \rlength to have a default width.
+\newlength{\rlength}\setlength{\rlength}{\textwidth}
+\newcommand{\ruletext}[2][\rlength]{%
+  \noindent%
+  \parbox{#1}{%
+    \noindent\hrulefill\raisebox{-.3\ht\strutbox}{#2}\hrulefill\par}}
+
+
+\marksnotpoints
+%\bracketedpoints
+\pointsinrightmargin
+\qformat{\textbf{Q \thequestion \quad \thequestiontitle\hfill\thepoints}}
+
+\begin{document}
+
+\input{Logo_and_title}
+\input{instructions}
+
+
+\begin{questions}
+%	\bracketedpoints
+	\pointsinrightmargin
+	\titledquestion{CLO1}[10]
+	You are working as an engineer in a telecommunications company, tasked with positioning a new antenna. The antenna's current location is given in Cartesian coordinates as $P(3, 4, 5)$. To accurately align the antenna with existing infrastructure, you need to convert this location into both cylindrical and spherical coordinates. 
+	\begin{parts}
+		\part Convert the given point $ P(3, 4, 5) $ in Cartesian coordinates to cylindrical coordinates
+		\part Convert the same point to spherical coordinates using the equations.
+		\part Individually plot the point in the three coordinate systems.
+	\end{parts}
+	
+		
+	\vspace{0.2in}
+	
+	\titledquestion{CLO1}[10]
+	You are an electromagnetic field engineer assigned to calculate the interaction between two charged particles in free space for a high-precision experimental setup. Charge $Q_A = -20 \, \mu C$ is located at $A(-6, 4, 7)$, and charge $Q_B = 50 \, \mu C$ is at $B(5, 8, -2)$. All distances are given in meters.
+	\begin{parts}
+		\part Calculate the distance $R_{AB}$ between points $A$ and $B$
+		\part Determine the unit vector $\hat{R}_{AB}$ pointing from $A$ to $B$.
+		\part Compute the vector force exerted on $Q_A$ by $Q_B$ using the permittivity $\epsilon_0 = \frac{10^{-9}}{36\pi} \, \text{F/m}$.
+		\part Recalculate the vector force with the permittivity $\epsilon_0 = 8.854 \times 10^{-12} \, \text{F/m}$.
+	\end{parts}
+	
+	\vspace{0.2in}
+	
+	\titledquestion{CLO2}[10]
+	You are tasked with analyzing the electric field properties in a region of free space where the electric flux density is given by $\mathbf{D} = 0.3r^2 \hat{a}_r \, \text{nC/m}^2$. You need to perform the following calculations for a report on the electric field distribution and charge within a spherical region.
+	\begin{parts}
+		\part Find the electric field $\mathbf{E}$ at point $P(r = 2, \theta = 25^\circ, \phi = 90^\circ)$.
+		\part Determine the total charge within a sphere of radius $r = 3$.
+		\part Calculate the total electric flux leaving a sphere of radius $r = 4$.
+	\end{parts}	
+\end{questions}
+
+
+
+\vspace{0.2in}
+\ruletext{\large \bfseries End of Paper}
+\end{document}
